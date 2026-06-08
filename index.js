@@ -7,6 +7,7 @@ import { portfolioChunks } from "./data/portfolioData.js";
 dotenv.config();
 
 const app = express();
+//TEDY
 
 app.use(cors());
 app.use(express.json());
