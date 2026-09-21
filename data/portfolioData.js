@@ -4,9 +4,9 @@ export const portfolioChunks = [
     id: "profile",
     title: "Profile",
     content: `
-Anshika Gupta is a Software Engineer with strong expertise in full-stack development.
-She has hands-on experience building scalable web applications, enterprise admin systems, and AI-powered solutions.
-Her core strength lies in frontend development using React and Next.js, while also having solid backend experience with Node.js, GraphQL, and API design.
+Anshika Gupta is a Full Stack (MERN) Software Developer with 2+ years of experience building scalable backend APIs, GraphQL services, and React/Next.js applications in production, with measurable impact (30%+ faster APIs, 25-35% faster page loads).
+She also has hands-on experience with AI/ML, building RAG pipelines and LLM apps using LangChain and the OpenAI API.
+Her core strength lies in backend and API development using Node.js and GraphQL, while also having solid frontend experience with React and Next.js.
 She is passionate about performance optimization, clean architecture, and building impactful real-world products.
     `,
   },
@@ -20,6 +20,18 @@ Phone: +91 8115497369
 Email: anshikagupta54511@gmail.com
 LinkedIn: anshika-gupta
 GitHub: anshikagupta5451
+LeetCode: available on request
+    `,
+  },
+
+  // 🔹 AVAILABILITY
+  {
+    id: "availability",
+    title: "Availability and Location",
+    content: `
+Anshika Gupta is currently open to new full-stack and backend-leaning roles.
+She is open to opportunities anywhere in India, including relocation, as well as fully remote roles.
+She is not restricted to a single city.
     `,
   },
 
@@ -28,25 +40,26 @@ GitHub: anshikagupta5451
     id: "tech-stack",
     title: "Technical Skills",
     content: `
+MERN / Core Stack:
+MongoDB, Express.js, React.js, Node.js, Next.js, Redux, Redux-Sagas.
+
+APIs & Backend:
+REST APIs, GraphQL, Microservices. Strong understanding of API design, authentication, role-based access, and scalable backend architecture.
+
 Languages:
 JavaScript, TypeScript, Python, Java.
-
-Frontend:
-React.js, Next.js, Redux, Redux-Sagas, Tailwind CSS, Material UI.
-Experienced in building responsive, scalable, and high-performance UI systems.
-
-Backend:
-Node.js, Express.js, GraphQL, REST APIs, Microservices.
-Strong understanding of API design, authentication, role-based access, and scalable backend architecture.
-
-AI/ML:
-LangChain, RAG (Retrieval-Augmented Generation), OpenAI API.
 
 Databases:
 MongoDB, PostgreSQL, MySQL.
 
-Tools & DevOps:
-Docker, Azure, GitLab CI/CD, Jenkins, Postman, Git, GitHub Actions.
+AI/ML:
+Python, LangChain, RAG (Retrieval-Augmented Generation) Pipelines, OpenAI API, Vector Search, scikit-learn fundamentals.
+
+UI & Styling:
+Tailwind CSS, Material UI. Experienced in building responsive, scalable, and high-performance UI systems.
+
+DevOps & Tools:
+Docker, Azure, Git, GitHub Actions, GitLab CI/CD, Jenkins, Postman.
     `,
   },
 
@@ -58,16 +71,15 @@ Docker, Azure, GitLab CI/CD, Jenkins, Postman, Git, GitHub Actions.
 Anshika Gupta is currently working as a Software Engineer at FiftyFive Technologies, Gurugram (May 2024 – Present).
 
 Major contributions:
-- Led migration from React.js to Next.js, improving page load speed by 25–35%.
-- Built Admin Portal from scratch with 10+ modules.
-- Reduced manual workflows by over 40%.
-- Designed and implemented backend APIs integrated with CRM systems.
-- Enabled real-time synchronization for user and order workflows.
-- Optimized GraphQL queries and implemented caching, reducing API response time by 30%+.
-- Developed multi-language (i18n) support for 5+ regions.
-- Built RBAC (role-based access control) systems.
-- Created 30+ reusable UI components.
-- Contributed to CI/CD pipelines and Docker deployments.
+- Designed and developed backend APIs (Node.js, GraphQL) integrated with an enterprise CRM Hub, enabling real-time data synchronization across user and order workflows.
+- Implemented caching layers and optimized GraphQL queries, reducing API response time by 30%+.
+- Built a role-based access control (RBAC) and profile management system at the API layer supporting multiple user roles.
+- Architected and built an Admin Portal backend from scratch (Node.js, MongoDB) with 10+ modules and supporting APIs, reducing manual internal processes by 40%+.
+- Led migration of core services from React.js to Next.js (including SSR and API routes), improving page load speed by 25–35%.
+- Developed backend support for internationalization (i18n) across 5+ regions, enabling expansion to global markets.
+- Set up and maintained CI/CD pipelines and Docker-based deployments, reducing release time and improving deployment reliability.
+- Built 30+ reusable React components consumed across the frontend, cutting development effort for new features by 25%.
+- Integrated an LLM-based (OpenAI API) auto-summarization feature into the Admin Portal to generate quick summaries of customer records and reduce manual review time.
     `,
   },
 
@@ -75,42 +87,50 @@ Major contributions:
     id: "experience-intern",
     title: "Internship Experience",
     content: `
-Software Engineer Intern at FiftyFive Technologies (Oct 2023 – Apr 2024).
+Software Engineer Intern at FiftyFive Technologies, Jaipur (Oct 2023 – Apr 2024).
 
-- Built 8+ production-grade frontend features using React and TypeScript.
-- Integrated 10+ REST and GraphQL APIs.
-- Implemented form validation and error handling.
-- Improved performance by optimizing state management and reducing re-renders.
-- Worked in Agile teams across multiple sprints.
+- Integrated 10+ REST and GraphQL APIs, enabling seamless data flow between React frontend and Node.js backend systems.
+- Implemented server-side validations and error handling, reducing production errors and improving application stability.
+- Optimized state management and API consumption patterns, reducing unnecessary re-renders and improving performance.
+- Developed 8+ production-grade features using React and TypeScript, improving UI consistency across modules.
     `,
   },
 
   // 🔹 PROFESSIONAL PROJECTS
   {
-    id: "project-nibe-customer-portal",
-    title: "Project: NIBE Customer Portal",
+    id: "project-ai-ticket-assistant",
+    title: "Project: AI-Powered Support Ticket Assistant",
     content: `
-Enterprise-level customer portal.
+Internal GenAI tool built with Node.js, LangChain, OpenAI API, and a Vector DB.
 
-- Migrated from React.js to Next.js for SEO and performance improvements.
-- Implemented SSR, ISR, and caching strategies.
-- Optimized image loading and reduced initial load time.
-- Worked on multilingual support across multiple regions.
-- Integrated APIs with backend systems and CRM services.
-- Focused on accessibility and scalable frontend architecture.
+- Auto-summarizes support tickets and suggests resolutions via RAG-based retrieval of similar past tickets.
+- Designed a Node.js backend exposing REST APIs to integrate the tool into the existing CRM Hub for faster ticket triage.
+- Reduced ticket resolution time by surfacing relevant historical context and suggested responses, cutting manual lookup effort.
+    `,
+  },
+
+  {
+    id: "project-nibe-admin-portal",
+    title: "Project: NIBE Admin Portal",
+    content: `
+Enterprise admin portal built with Node.js, GraphQL, MongoDB, Azure, and React.
+
+- Built scalable backend architecture with optimized GraphQL data-fetching strategies and MongoDB schema design.
+- Revamped an enterprise admin portal with an improved API structure and modular backend architecture, increasing usability by 40%.
+- Reduced unnecessary re-renders and optimized component lifecycle on the consuming React frontend.
     `,
   },
 
   {
     id: "project-admin-portal",
-    title: "Project: Admin Portal",
+    title: "Project: FiftyFive Admin Portal",
     content: `
-Internal enterprise admin dashboard built from scratch.
+Internal enterprise admin dashboard built from scratch (Node.js, MongoDB).
 
 - Developed 10+ modules for internal business operations.
-- Designed scalable frontend architecture.
+- Designed scalable backend architecture.
 - Integrated backend APIs with role-based access control.
-- Reduced manual workflows by more than 40%.
+- Reduced manual internal processes by more than 40%.
 - Enabled efficient management of users, products, and workflows.
     `,
   },
