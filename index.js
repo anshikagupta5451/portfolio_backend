@@ -28,7 +28,16 @@ process.on("exit", (code) => {
 
 const app = express();
 
-app.use(cors());
+const allowedOrigins = [
+  "https://anshika-gupta-software-developer.vercel.app",
+  "http://localhost:5173",
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+  })
+);
 app.use(express.json());
 
 const ai = new GoogleGenAI({
